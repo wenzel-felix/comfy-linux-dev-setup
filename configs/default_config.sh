@@ -1,27 +1,5 @@
 #!/bin/bash
 
-Help()
-{
-   # Display Help
-   echo "Add description of the script functions here."
-   echo
-   echo "Syntax: scriptTemplate [-g|h|v|V]"
-   echo "options:"
-   echo "h     Print this Help."
-   echo "u     Git user name."
-   echo "m     Git email address."
-   echo
-}
-
-############################################################
-############################################################
-# Main program                                             #
-############################################################
-############################################################
-############################################################
-# Process the input options. Add options as needed.        #
-############################################################
-# Get the options
 while getopts ":h:u:m:" option; do
    case $option in
       h) # display Help
